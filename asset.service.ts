@@ -225,7 +225,9 @@ export class AssetService {
                         smsAlarmEndTime: '23:59',
                         createdAt: getNow().toDate(),
                         createdBy: accountId,
-                        assetId: x.tracker.asset.id
+                        assetId: x.tracker.asset.id,
+                        updatedAt: getNow().toDate(),
+                        updatedBy: accountId
                     }
                 }))
             })
